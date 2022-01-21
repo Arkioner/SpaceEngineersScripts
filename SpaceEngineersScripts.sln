@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingIngameScript", "TestingIngameScript\TestingIngameScript.csproj", "{9BD34320-2F8D-4059-82D7-A828D11CEAC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerKeepAliver", "TimerKeepAliver\TimerKeepAliver.csproj", "{8172DC15-4DFE-4076-8D16-779BF36292CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefineriesPendingTime", "RefineriesPendingTime\RefineriesPendingTime.csproj", "{202A39BC-AAF5-486C-BCA6-FB1BE181B7F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BD34320-2F8D-4059-82D7-A828D11CEAC9}.Debug|x64.ActiveCfg = Debug|x64
+		{9BD34320-2F8D-4059-82D7-A828D11CEAC9}.Debug|x64.Build.0 = Debug|x64
+		{8172DC15-4DFE-4076-8D16-779BF36292CD}.Debug|x64.ActiveCfg = Debug|x64
+		{8172DC15-4DFE-4076-8D16-779BF36292CD}.Debug|x64.Build.0 = Debug|x64
+		{202A39BC-AAF5-486C-BCA6-FB1BE181B7F0}.Debug|x64.ActiveCfg = Debug|x64
+		{202A39BC-AAF5-486C-BCA6-FB1BE181B7F0}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA1C4D2C-8FC0-4262-8252-6B0473C5E8DF}
+	EndGlobalSection
+EndGlobal
