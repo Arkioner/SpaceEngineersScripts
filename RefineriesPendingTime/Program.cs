@@ -61,16 +61,19 @@ namespace IngameScript
                     secondsToRefine += itemToRefine.Value.GetTotalAmountOfTime();
                 }
                 float bonifiedSecondsToRefine = secondsToRefine / (speedMultiplier * Refineries.Count);
+                float speedBonifiedSecondsToRefine = secondsToRefine / (speedMultiplier * Refineries.Count * 7);
                 var TotalTimeToRefine = TimeSpan.FromSeconds(bonifiedSecondsToRefine);
-                var outputText = "Total time left:\n" + TotalTimeToRefine.Days + " Days\n" + TotalTimeToRefine.Hours + " Hours\n" + TotalTimeToRefine.Minutes + " Minutes\n" + TotalTimeToRefine.Seconds + " Seconds";
+                var TotalTimeToRefineWithSpeedModules = TimeSpan.FromSeconds(speedBonifiedSecondsToRefine);
+                var outputText = "Total time left:\nWith yield modules:\n" + TotalTimeToRefine.Days + " Days\n" + TotalTimeToRefine.Hours + " Hours\n" + TotalTimeToRefine.Minutes + " Minutes\n" + TotalTimeToRefine.Seconds + " Seconds";
+                var outputTextWithSpeed = "With speed modules:\n" + TotalTimeToRefineWithSpeedModules.Days + " Days\n" + TotalTimeToRefineWithSpeedModules.Hours + " Hours\n" + TotalTimeToRefineWithSpeedModules.Minutes + " Minutes\n" + TotalTimeToRefineWithSpeedModules.Seconds + " Seconds";
                 if (TextPanel != null)
                 {
-                    TextPanel.WriteText(outputText);
+                    TextPanel.WriteText(outputText + "\n" + outputTextWithSpeed);
                 } else
                 {
                     Echo("Set up a lcd screen with name: " + TextPanelName);
                 }
-                Echo(outputText);
+                Echo(outputText + "\n" + outputTextWithSpeed);
                 yield return true;
             }
         }
